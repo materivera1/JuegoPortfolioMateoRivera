@@ -1,0 +1,15 @@
+*Resolver la situacion de laser (en teoria resuelta)
+*que eran bien los []params de los metodos (se que habia que usarlos pero no me acuerdo para que mierda eran)
+EJEMPLO
+void ShootShipEvent(object[] wrapperParam)     //evento que instancia la bala 
+    {
+        var trans = (Transform)transform;
+        var bullet = GetBulletFromPool();
+        bullet.transform.position = trans.position;
+        bullet.transform.up = trans.up;
+    }
+
+*cuando la nave colisiona con un meteorito, el meteorito se destruye, esta bien si se deja asi, suma puntos, y se le resta una vida?
+
+Scripts para abrir, Laser, bullets, weapon
+
